@@ -1,0 +1,17 @@
+replicaCount: 2
+
+image:
+  repository: nginx
+  tag: latest
+
+service:
+  type: ClusterIP 
+  port: 80
+
+config:
+  appName: my-nginx-app
+  environment: development
+
+secret:
+  username: admin
+  password: admin123
